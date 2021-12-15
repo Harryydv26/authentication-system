@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import {useHistory} from "react-router-dom";
 import axios from "axios";
 
+axios.defaults.baseURL = 'https://fast-eyrie-81170.herokuapp.com/';
+
 
 const PrivateScreen = () => {
   const [error, setError] = useState("");
